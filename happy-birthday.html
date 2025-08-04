@@ -15,9 +15,8 @@
             background-image: url('https://res.cloudinary.com/dbtiuie7d/image/upload/v1754306621/WhatsApp_Image_2025-08-04_at_18.22.47_ddzuk9.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Kunci gambar latar belakang */
+            background-attachment: fixed;
             color: #f7f7f7;
-            /* overflow: hidden; -- Kode ini dihapus agar halaman bisa digulir */
         }
         .dancing-script {
             font-family: 'Dancing Script', cursive;
@@ -25,6 +24,9 @@
         .backdrop-blur {
             backdrop-filter: blur(8px) brightness(0.6);
             -webkit-backdrop-filter: blur(8px) brightness(0.6);
+        }
+        .text-shadow-md {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
         .heart {
             color: #ff69b4;
@@ -59,27 +61,27 @@
 
     <div class="flex flex-col items-center justify-center h-full min-h-screen p-4 md:p-8">
         
-        <div id="countdown-card" class="bg-pink-400 bg-opacity-10 backdrop-blur rounded-2xl shadow-2xl p-6 md:p-10 lg:p-12 max-w-xl text-center relative z-10 fade-in">
-            <h1 class="dancing-script text-3xl md:text-5xl text-white font-bold mb-4">
+        <div id="countdown-card" class="bg-pink-600 bg-opacity-20 backdrop-blur rounded-2xl shadow-2xl p-6 md:p-10 lg:p-12 max-w-xl text-center relative z-10 fade-in">
+            <h1 class="dancing-script text-3xl md:text-5xl text-white font-bold mb-4 text-shadow-md">
                 Selamat Ulang Tahun ...
             </h1>
-            <p class="text-gray-100 text-xl md:text-2xl mb-4">
+            <p class="text-white text-xl md:text-2xl mb-4 text-shadow-md">
                 Asik... ada yang ulang tahun nih..
             </p>
             <div id="countdown" class="flex justify-center items-center space-x-4 mb-8">
-                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-50">
+                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-200 text-shadow-md">
                     <span id="days" class="block text-4xl md:text-6xl font-bold">00</span>
                     <span class="block text-sm">Hari</span>
                 </div>
-                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-50">
+                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-200 text-shadow-md">
                     <span id="hours" class="block text-4xl md:text-6xl font-bold">00</span>
                     <span class="block text-sm">Jam</span>
                 </div>
-                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-50">
+                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-200 text-shadow-md">
                     <span id="minutes" class="block text-4xl md:text-6xl font-bold">00</span>
                     <span class="block text-sm">Menit</span>
                 </div>
-                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-50">
+                <div class="bg-white bg-opacity-20 rounded-lg p-3 md:p-4 text-pink-200 text-shadow-md">
                     <span id="seconds" class="block text-4xl md:text-6xl font-bold">00</span>
                     <span class="block text-sm">Detik</span>
                 </div>
@@ -89,8 +91,8 @@
             </button>
         </div>
 
-        <div id="message-card" class="message-hidden bg-pink-400 bg-opacity-10 backdrop-blur rounded-2xl shadow-2xl p-6 md:p-10 lg:p-12 max-w-2xl text-center relative z-10 text-pink-600 mt-8">
-            <h1 class="dancing-script text-5xl md:text-6xl text-pink-50 font-bold mb-4 animate-pulse">
+        <div id="message-card" class="message-hidden bg-pink-600 bg-opacity-20 backdrop-blur rounded-2xl shadow-2xl p-6 md:p-10 lg:p-12 max-w-2xl text-center relative z-10 mt-8">
+            <h1 class="dancing-script text-5xl md:text-6xl text-pink-50 font-bold mb-4 animate-pulse text-shadow-md">
                 Selamat Ulang Tahun, Sayang!
             </h1>
             <p class="text-white text-xl md:text-2xl font-light leading-relaxed mb-6 text-shadow-md">
@@ -106,10 +108,10 @@
                 Terima kasih sudah lahir dan mewarnai duniaku. Aku mencintaimu, hari ini, esok, dan selamanya. Love u ❤️
             </p>
             <div class="mt-8">
-                <p class="text-xl md:text-2xl font-semibold dancing-script text-pink-400">
+                <p class="text-xl md:text-2xl font-semibold dancing-script text-pink-400 text-shadow-md">
                     Dari aku,
                 </p>
-                <p class="text-2xl md:text-3xl font-bold dancing-script text-pink-200">
+                <p class="text-2xl md:text-3xl font-bold dancing-script text-pink-200 text-shadow-md">
                     Calon Suami Kamu (Asep) ❤️
                 </p>
             </div>
