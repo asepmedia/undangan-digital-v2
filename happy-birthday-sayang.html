@@ -177,14 +177,14 @@
             const now = new Date().getTime();
             const distance = birthdayDate - now;
 
-            if (distance < 0) {
-                countdownCard.classList.add('hidden');
-                messageCard.classList.remove('message-hidden');
-                galleryCard.classList.remove('message-hidden');
-                messageCard.classList.add('message-fade-in');
-                music.play();
-                return;
-            }
+            // if (distance < 0) {
+            //     countdownCard.classList.add('hidden');
+            //     messageCard.classList.remove('message-hidden');
+            //     galleryCard.classList.remove('message-hidden');
+            //     messageCard.classList.add('message-fade-in');
+            //     music.play();
+            //     return;
+            // }
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
